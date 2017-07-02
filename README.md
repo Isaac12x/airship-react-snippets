@@ -1,5 +1,5 @@
 # Airship React Snippets
-------------------------
+
 This is a collection of React Snippets to make your fingers a little happier.
 
 ## Installation
