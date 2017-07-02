@@ -20,65 +20,65 @@ Alternatively you can open the extensions panel and search for 'Airship React Sn
 ## Snippets
 
 __imp__
-```
+```javascript
 import $1 from '$2';
 ```
 
 __impr__
-```
+```javascript
 import React from 'react';
 ```
 
 __imprc__
-```
+```javascript
 import React, { Component } from 'react';
 ```
 
 __imprn__
-```
+```javascript
 import { $1 } from 'react-native';
 ```
 
 __imprr__
-```
+```javascript
 import { connect } from 'react-redux';
 ```
 
 __impaa__
-```
+```javascript
 import * as $1 from '$2';
 ```
 
 __afn__
-```
+```javascript
 $1 = ($2) => {
   $3
 };
 ```
 
 __eafn__
-```
+```javascript
 export default ($1) => {
   $2
 };
 ```
 
 __enfn__
-```
+```javascript
 export const $1 = ($2) => {
   $3
 };
 ```
 
 __prom__
-```
+```javascript
 return new Promise((resolve, reject) => {
   $1
 });
 ```
 
 __rinit__
-```
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -89,7 +89,7 @@ ReactDOM.render(
 ```
 
 __rcc__
-```
+```javascript
 class $1 extends Component {
   state = { $2 };
 
@@ -104,7 +104,7 @@ export default $1;
 ```
 
 __recc__
-```
+```javascript
 export default class $1 extends Component {
   state = { $2 };
 
@@ -117,7 +117,7 @@ export default class $1 extends Component {
 ```
 
 __ris__
-```
+```javascript
 this.state = {
   $1
 };
@@ -125,19 +125,19 @@ this.state = {
 ```
 
 __rss__
-```
+```javascript
 this.setState({
   $1: $2
 });
 ```
 
 __rs__
-```
+```javascript
 this.state.$1
 ```
 
 __rcpt__
-```
+```javascript
 $1.propTypes = {
   $2
 };
@@ -148,19 +148,19 @@ $1.defaultProps = {
 ```
 
 __rp__
-```
+```javascript
 this.props.$1
 ```
 
 __rcon__
-```
+```javascript
 constructor(props) {
   $1
 }
 ```
 
 __rren__
-```
+```javascript
 render() {
   return (
     $1
@@ -169,49 +169,49 @@ render() {
 ```
 
 __rcwm__
-```
+```javascript
 componentWillMount() {
   $1
 }
 ```
 
 __rcdm__
-```
+```javascript
 componentDidMount() {
   $1
 }
 ```
 
 __rcwum__
-```
+```javascript
 componentWillUnmount() {
   $1
 }
 ```
 
 __rcwu__
-```
+```javascript
 componentWillUpdate(nextProps) {
   $1
 }
 ```
 
 __rcdu__
-```
+```javascript
 componentDidUpdate(prevProps, prevState) {
   $1
 }
 ```
 
 __rcwrp__
-```
+```javascript
 componentWillReceiveProps(nextProps) {
   $1
 }
 ```
 
 __rsc__
-```
+```javascript
 const $1 = () => (
   $2
 )
@@ -220,7 +220,7 @@ export default $1;
 ```
 
 __rhoc__
-```
+```javascript
 import React, { Component } from 'react';
 
 export default function(ComposedComponent) {
@@ -235,7 +235,7 @@ export default function(ComposedComponent) {
 ```
 
 __rrinit__
-```
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -254,7 +254,7 @@ ReactDOM.render(
 ```
 
 __rrcr__
-```
+```javascript
 import { combineReducers } from 'redux';
 import $1 from './$2';
 
@@ -266,7 +266,7 @@ export default rootReducer;
 ```
 
 __rccc__
-```
+```javascript
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
@@ -286,7 +286,7 @@ export default connect(mapStateToProps)($1);
 ```
 
 __rred__
-```
+```javascript
 export default (state = $1, action) => {
   switch(action.type) {
     case $2:
@@ -298,7 +298,7 @@ export default (state = $1, action) => {
 ```
 
 __rmstp__
-```
+```javascript
 const mapStateToProps = (state) => ({
   $1
 });
