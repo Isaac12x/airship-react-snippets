@@ -1,0 +1,37 @@
+{
+  "name": "airship-react-snippets",
+  "displayName": "Airhip React Snippets",
+  "description": "Extensions for React and Redux.",
+  "version": "0.0.3",
+  "icon": "images/react.png",
+  "publisher": "airship",
+  "keywords": [
+    "vscode",
+    "snippets",
+    "react",
+    "redux",
+    "react-native"
+  ],
+  "engines": {
+    "vscode": "^1.13.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "jsx",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}

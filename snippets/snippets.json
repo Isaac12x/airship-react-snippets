@@ -1,0 +1,322 @@
+{
+  "Import": {
+    "prefix": "imp",
+    "body": [
+      "import $1 from '$2';"
+    ]
+  },
+  "Import React": {
+    "prefix": "impr",
+    "body": [
+      "import React from 'react';"
+    ]
+  },
+  "Import React Component": {
+    "prefix": "imprc",
+    "body":[
+      "import React, { Component } from 'react';",
+      "import PropTypes from 'prop-types';"
+    ]
+  },
+  "Import React Native Component": {
+    "prefix": "imprn",
+    "body":[
+      "import { $1 } from 'react-native';"
+    ]
+  },
+  "Import React Redux": {
+    "prefix": "imprr",
+    "body":[
+      "import { connect } from 'react-redux';"
+    ]
+  },
+  "Import All Actions": {
+    "prefix": "impaa",
+    "body": [
+      "import * as $1 from '$2';"
+    ]
+  },
+  "Arrow Function": {
+    "prefix": "afn",
+    "body": [
+      "$1 = ($2) => {",
+      "\t$3",
+      "}"
+    ]
+  },
+  "Export Arrow Function": {
+    "prefix": "eafn",
+    "body": [
+      "export default ($1) => {",
+      "\t$2",
+      "}"
+    ]
+  },
+  "Export Named Function": {
+    "prefix": "enfn",
+    "body": [
+      "export const $1 = ($2) => {",
+      "\t$3",
+      "}"
+    ]
+  },
+  "Promise": {
+    "prefix": "prom",
+    "body": [
+      "return new Promise((resolve, reject) => {",
+      "\t$1",
+      "});"
+    ]
+  },
+  "Initialize React": {
+    "prefix": "rinit",
+    "body": [
+      "import React from 'react';",
+      "import ReactDOM from 'react-dom';",
+      "",
+      "ReactDOM.render(",
+      "\t$2",
+      "\t, document.querySelector('$1')",
+      ");"
+    ]
+  },
+  "Class Component": {
+    "prefix": "rcc",
+    "body": [
+      "class $1 extends Component {",
+      "\tstate = { $2 };",
+      "",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t$3",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "export default $1;"
+    ]
+  },
+  "Export Class Component": {
+    "prefix": "recc",
+    "body": [
+      "export default class $1 extends Component {",
+      "\tstate = { $2 };",
+      "",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t$3",
+      "\t\t);",
+      "\t}",
+      "}"
+    ]
+  },
+  "Initiatlize State": {
+    "prefix": "ris",
+    "body": [
+      "this.state = {",
+      "\t$1",
+      "};",
+      ""
+    ]
+  },
+  "setState": {
+    "prefix": "rss",
+    "body": [
+      "this.setState({",
+      "\t$1: $2",
+      "});"
+    ]
+  },
+  "State": {
+    "prefix": "rs",
+    "body": [
+      "this.state.$1"
+    ]
+  },
+  "PropTypes": {
+    "prefix": "rcpt",
+    "body": [
+      "$1.propTypes = {",
+      "\t$2",
+      "};",
+      "",
+      "$1.defaultProps = {",
+      "\t",
+      "};"
+    ]
+  },
+  "Props": {
+    "prefix": "rp",
+    "body": [
+      "this.props.$1"
+    ]
+  },
+  "Constructor": {
+    "prefix": "rcon",
+    "body": [
+      "constructor(props) {",
+      "\t$1",
+      "}"
+    ]
+  },
+  "render": {
+    "prefix": "rren",
+    "body": [
+      "render() {",
+      "\treturn (",
+      "\t\t$1",
+      "\t);",
+      "}"
+    ]
+  },
+  "componentWillMount": {
+    "prefix": "rcwm",
+    "body": [
+      "componentWillMount() {",
+      "\t$1",
+      "}"
+    ]
+  },
+  "componentDidMount": {
+    "prefix": "rcdm",
+    "body": [
+      "componentDidMount() {",
+      "\t$1",
+      "}"
+    ]
+  },
+  "componentWillUnmount": {
+    "prefix": "rcwum",
+    "body": [
+      "componentWillUnmount() {",
+      "\t$1",
+      "}"
+    ]
+  },
+  "componentWillUpdate": {
+    "prefix": "rcwu",
+    "body": [
+      "componentWillUpdate(nextProps) {",
+      "\t$1",
+      "}"
+    ]
+  },
+  "componentDidUpdate": {
+    "prefix": "rcdu",
+    "body": [
+      "componentDidUpdate(prevProps, prevState) {",
+      "\t$1",
+      "}"
+    ]
+  },
+  "componentWillReceiveProps": {
+    "prefix": "rcwrp",
+    "body": [
+      "componentWillReceiveProps(nextProps) {",
+      "\t$1",
+      "}"
+    ]
+  },
+  "Stateless Component": {
+    "prefix": "rsc",
+    "body": [
+      "const $1 = () => (",
+      "\t$2",
+      ");",
+      "",
+      "export default $1;"
+    ]
+  },
+  "Higher Order Component": {
+    "prefix": "rhoc",
+    "body": [
+      "import React, { Component } from 'react';",
+      "",
+      "export default function(ComposedComponent) {",
+      "\tclass $1 extends Component {",
+      "",
+      "\t\trender() {",
+      "\t\t\treturn <ComposedComponent {...this.props} />;",
+      "\t\t}",
+      "\t}",
+      "",
+      "\texport default $1;",
+      "}"
+    ]
+  },
+  "Initialize React Redux": {
+    "prefix": "rrinit",
+    "body": [
+      "import React from 'react';",
+      "import ReactDOM from 'react-dom';",
+      "import { Provider } from 'react-redux';",
+      "import { createStore, applyMiddleware } from 'redux';",
+      "",
+      "import reducers from './reducers';",
+      "",
+      "const createStoreWithMiddleware = applyMiddleware()(createStore);",
+      "",
+      "ReactDOM.render(",
+      "\t<Provider store={createStoreWithMiddleware(reducers)}>",
+      "\t\t$2",
+      "\t</Provider>",
+      "\t, document.querySelector('$1')",
+      ");"
+    ]
+  },
+  "Combine Reducers": {
+    "prefix": "rrcr",
+    "body": [
+      "import { combineReducers } from 'redux';",
+      "import $1 from './$2';",
+      "",
+      "const rootReducer = combineReducers({",
+      "\t$3",
+      "});",
+      "",
+      "export default rootReducer;"
+    ]
+  },
+  "Connected Class Component": {
+    "prefix": "rccc",
+    "body": [
+      "import React, { Component } from 'react';",
+      "import { connect } from 'react-redux';",
+      "",
+      "class $1 extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t$2",
+      "\t\t);",
+      "\t}",
+      "}",
+      "",
+      "const mapStateToProps = (state) => ({",
+      "\t$3",
+      "});",
+      "",
+      "export default connect(mapStateToProps)($1);"
+    ]
+  },
+  "Redux Reducer": {
+    "prefix": "rred",
+    "body": [
+      "export default (state = $1, action) => {",
+      "\tswitch (action.type) {",
+      "\t\tcase $2:",
+      "\t\t\t$3",
+      "\t\tdefault:",
+      "\t\t\treturn state;",
+      "\t}",
+      "};"
+    ]
+  },
+  "mapStateToProps": {
+    "prefix": "rmstp",
+    "body": [
+      "const mapStateToProps = (state) => ({",
+      "\t$1",
+      "});"
+    ]
+  }
+}
