@@ -230,7 +230,7 @@ export default function(ComposedComponent) {
     }
   }
 
-  export default $1;
+  return $1;
 }
 ```
 
