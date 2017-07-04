@@ -83,17 +83,20 @@
   "Class Component": {
     "prefix": "rcc",
     "body": [
-      "class $1 extends Component {",
-      "\tstate = { $2 };",
+      "import React, { Component } from 'react';",
+      "${1:import PropTypes from 'prop-types';}",
+      "",
+      "class $2 extends Component {",
+      "\tstate = { $3 };",
       "",
       "\trender() {",
       "\t\treturn (",
-      "\t\t\t$3",
+      "\t\t\t$4",
       "\t\t);",
       "\t}",
       "}",
       "",
-      "export default $1;"
+      "export default $2;"
     ]
   },
   "Export Class Component": {
@@ -240,7 +243,7 @@
       "\t\t}",
       "\t}",
       "",
-      "\texport default $1;",
+      "\treturn $1;",
       "}"
     ]
   },
